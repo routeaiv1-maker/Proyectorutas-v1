@@ -734,10 +734,17 @@ const Sidebar = ({
                     <div style={styles.section}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 }}>
                             <h3 style={{ margin: 0, fontSize: 13, fontWeight: 600, color: 'rgba(255,255,255,0.7)' }}>📦 Entregas ({waypoints.length})</h3>
-                            {waypoints.length >= 2 && (
-                                <button onClick={handleOptimize} disabled={isOptimizing} style={{ ...styles.btn, ...styles.successBtn, padding: '8px 14px' }}>
-                                    <Zap size={14} /> {isOptimizing ? '...' : 'Optimizar'}
-                                </button>
+                            {waypoints.length > 0 && (
+                                <div style={{ display: 'flex', gap: 8 }}>
+                                    <button onClick={() => setWaypoints([])} style={{ ...styles.btn, background: 'rgba(239,68,68,0.1)', color: '#ef4444', padding: '8px 10px' }} title="Borrar todo">
+                                        <Trash2 size={14} />
+                                    </button>
+                                    {waypoints.length >= 2 && (
+                                        <button onClick={handleOptimize} disabled={isOptimizing} style={{ ...styles.btn, ...styles.successBtn, padding: '8px 14px' }}>
+                                            <Zap size={14} /> {isOptimizing ? '...' : 'Optimizar'}
+                                        </button>
+                                    )}
+                                </div>
                             )}
                         </div>
 

@@ -453,12 +453,6 @@ const MapComponent = ({ waypoints, setWaypoints, onAddWaypoint, previewRoute, on
                 </div>
             )}
 
-            {/* Clear button */}
-            {waypoints.length > 0 && !previewRoute && (
-                <button onClick={() => onClearRoute ? onClearRoute() : setWaypoints([])} style={{ position: 'absolute', bottom: 110, left: '50%', transform: 'translateX(-50%)', background: 'rgba(239,68,68,0.9)', color: 'white', padding: '12px 28px', borderRadius: 24, fontWeight: 600, fontSize: 14, border: 'none', cursor: 'pointer', zIndex: 1000, boxShadow: '0 4px 12px rgba(0,0,0,0.3)' }}>
-                    🗑️ Limpiar Ruta ({waypoints.length})
-                </button>
-            )}
         </div>
     );
 };
