@@ -124,20 +124,9 @@ const MapComponent = ({ waypoints, setWaypoints, onAddWaypoint, previewRoute, on
             setMapReady(true);
         });
 
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(pos => {
-                const { latitude, longitude } = pos.coords;
-                setUserLocation(latitude, longitude);
-                if (map.current) {
-                    map.current.flyTo({ center: [longitude, latitude], zoom: 14 });
-                    if (!userMarkerRef.current) {
-                        const el = document.createElement('div');
-                        el.style.cssText = 'width:20px;height:20px;background:#3b82f6;border-radius:50%;border:3px solid white;box-shadow:0 0 10px rgba(59,130,246,0.5)';
-                        userMarkerRef.current = new maplibregl.Marker({ element: el }).setLngLat([longitude, latitude]).addTo(map.current);
-                    }
-                }
-            }, () => { }, { enableHighAccuracy: true });
-        }
+
+        // Automatic geolocation removed by user request. 
+        // Use the "My Location" button (handleLocateUser) instead.
 
         return () => {
             // Cleanup on unmount only
