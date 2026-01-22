@@ -236,7 +236,7 @@ npm run preview
 
 ## 📄 Licencia
 
-Este proyecto es desarrollado como **trabajo de grado** para la Universidad Popular del Cesar Aguachica (UPCA). 
+Este proyecto es desarrollado como **trabajo de grado** para la Universidad Politecnico De la Costa Atlantico. 
 
 Todos los derechos reservados © 2025-2026
 
@@ -249,6 +249,6 @@ Para más información sobre este proyecto, contactar a los autores a través de
 ---
 
 <p align="center">
-  <strong>UPCA</strong> - Programas de Ingeniería y Tecnología en Desarrollo de Software<br>
+  <strong>UPCA</strong> - Programa de Ingeniería de Software<br>
   <em>Barranquilla, Colombia</em>
 </p>
