@@ -236,7 +236,7 @@ npm run preview
 
 ## 📄 Licencia
 
-Este proyecto es desarrollado como **trabajo de grado** para la Universidad Politecnico De la Costa Atlantico. 
+Este proyecto es desarrollado como **trabajo de grado** para la Corporación Universitaria Politecnico Costa Atlantica. 
 
 Todos los derechos reservados © 2025-2026
 
